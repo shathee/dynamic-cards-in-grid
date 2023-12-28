@@ -1,8 +1,10 @@
+"use client";
+
 import React from "react";
 import Card from "./Card";
 
 interface GridProps {
-  cards: { width: number; height: number }[];
+  cards: { rank: number; width: number; height: number }[];
 }
 
 const Grid: React.FC<GridProps> = ({ cards }) => {
